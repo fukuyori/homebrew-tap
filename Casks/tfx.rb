@@ -1,6 +1,6 @@
 cask "tfx" do
   version "0.9.10"
-  sha256 "2fdf6285a3b04934fbb4e3648d5800ad8553b716cdb5af548c507d529384c1c7"
+  sha256 "e3412004fd1db7b56df506561191ef0ff12b0f32f542db64f8fa431a1983467b"
 
   url "https://github.com/fukuyori/tfx/releases/download/#{version}/tfx-#{version}.zip"
   name "tfx"
@@ -11,7 +11,7 @@ cask "tfx" do
   depends_on macos: :sequoia
 
   app "tfx.app"
-  binary "#{appdir}/tfx.app/Contents/MacOS/tfx", target: "tfx"
+  command_wrapper "tfx", executable: "#{appdir}/tfx.app/Contents/MacOS/tfx"
 
   zap trash: "~/Library/Application Support/tfx"
 end
