@@ -1,6 +1,6 @@
 cask "tfx" do
-  version "0.10.0"
-  sha256 "5ca0a6e4cc39b93d1da9bdde89c008f02f6428c421c85748123e9a0285edf182"
+  version "0.10.1"
+  sha256 "f41cf20736a7fdbfa02a2d19c88f7466ab9307cad9e15bc3c2c7ff1222f79031"
 
   url "https://github.com/fukuyori/tfx/releases/download/#{version}/tfx-#{version}.zip"
   name "tfx"
